@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    background-color: rgb(236, 181, 79);
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1cd28;
+    padding: 30px 0;
+    border: 5px solid black; 
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none
+}
+ul li a{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin:0 25px ;
+    color: #262626;
+    font-size:30px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    padding: 5px 10px;
+}
+ul li a:hover{
+    color: #fff;
+    background: #f06b13 ;
+}
+ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #f06b13;
+    border-width: 0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+ul li a:hover:before{
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+
+}
+ul li a:after{
+    content:'' ;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #f06b13;
+    border-width: 3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+
+}
+ul li a:hover:after{
+    top: -8px;
+    right: -8px;
+    opacity: 1
+    ;
+}
+.cards{
+    background-color: rgb(236, 181, 79);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*középre ( vizszintesen) */
+    align-items: center;     /*fuggolegesen kozepre */
+    height: 700px;
+    border: 10px black;
+
+
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 70%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 black;
+
+}
+h3{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px ;
+    text-align: left;
+
+}
+
+h4{
+    text-align: center;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.kep{
+    height: 200px;
+    width: 100%;
+    
+    
+}
+button{
+    background-color: rgb(255, 217, 0);
+    font-size: 10px;
+    margin-bottom: 19px;
+    
+}
+.gomb{
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+}
+.gomb:hover{
+    background-color:#d6a811
+}
